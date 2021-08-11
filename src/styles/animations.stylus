@@ -1,0 +1,48 @@
+.fade-enter-active {
+  animation: fade-in .3s forwards;
+}
+
+.fade-leave-active {
+  animation: fade-in .3s forwards reverse;
+}
+
+.scale-enter-active {
+  animation: scale-in 0.5s forwards;
+}
+
+.scale-leave-active {
+  animation: scale 0.7s forwards reverse;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform scale(0.7)
+    opacity 0
+  }
+
+  100% {
+    transform scale(1)
+    opacity 1
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform scale(1.2)
+    opacity 0  
+  }
+
+  100% {
+    transform scale(1)
+    opacity 1  
+  }
+}

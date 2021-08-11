@@ -1,0 +1,53 @@
+@import './colors.stylus'
+@import './default.stylus'
+@import './layout.stylus'
+@import './animations.stylus'
+@import './variables.stylus'
+
+body {
+  font-family 'Montserrat', sans-serif
+  background-color var(--primary)
+}
+
+html {
+  font-size 10px
+}
+
+* {
+  color #fff
+  user-select none
+}
+
+.container {
+  width 100%
+  max-width 70%
+  margin 0 auto
+  // border 1px solid #fff
+  padding 10px
+  padding-bottom 10rem
+}
+
+.backtext {
+  position absolute
+  z-index -1
+
+  font-size 16rem
+  opacity var(--backtext)
+  font-weight 600
+}
+
+a {
+  text-decoration none
+}
+
+@media screen and (max-width 1200px) {
+  html {
+    font-size 8px
+  }  
+}
+
+@media screen and (max-width 720px) {
+  html {
+    font-size 6px
+  }  
+}
