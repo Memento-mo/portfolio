@@ -13,11 +13,11 @@
       <Home />
     </section>
     
-    <section class="padding">
+    <section class="padding-10">
       <Services />
     </section>
 
-    <section class="padding">
+    <section class="padding-15">
       <Experience />
     </section>
   </main>
@@ -44,7 +44,11 @@ export default defineComponent({
 
 
 <style lang="stylus" scoped>
-.padding {
+.padding-10 {
   padding-top 10rem
+}
+
+.padding-15 {
+  padding-top 15rem
 }
 </style>

@@ -48,7 +48,7 @@ export default defineComponent({
     &__message {
       margin-top 8px
       line-height 17px
-      opacity 0.6
+      opacity var(--opacity-text)
     }
   }
 

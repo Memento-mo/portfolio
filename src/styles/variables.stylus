@@ -3,4 +3,5 @@
 
   --shadow 0px 0px 38px 6px rgba(0, 0, 0, 0.38)
   --hover-shadow 0px 0px 20px 4px rgba(0, 0, 0, 0.38)
+  --opacity-text 0.7
 }

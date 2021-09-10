@@ -1,23 +1,32 @@
 <template>
-  <div class="services-body row align-items-center">
-    <div class="backtext backtext-addition">
+  <Section>
+    <template v-slot:background>
       <div>my</div>
       <div>services</div>
-    </div>
-    <div class="services-body__title">
-      <p>сервисы</p>
-    </div>
-    <div class="services-body__text">
-      <p>Только современная разработка по последним трендам</p>
-    </div>
-  </div>
+    </template>
+
+    <template v-slot:body>
+      <div class="row align-items-center">
+        <div class="services-body__title">
+          <p>сервисы</p>
+        </div>
+        <div class="services-body__text">
+          <p>Только современная разработка</p>
+        </div>
+      </div>
+    </template>
+  </Section>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-export default defineComponent({
+import Section from '@/components/wrapper/Section.vue'
 
+export default defineComponent({
+  components: {
+    Section
+  }
 })
 </script>
 
@@ -35,7 +44,7 @@ export default defineComponent({
 
   &__text {
     font-size 1.2rem
-    opacity 0.7
+    opacity var(--opacity-text)
     line-height 2.5rem
     margin-top 1rem
   }
